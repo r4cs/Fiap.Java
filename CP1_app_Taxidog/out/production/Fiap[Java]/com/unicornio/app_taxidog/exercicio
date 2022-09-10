@@ -1,0 +1,79 @@
+Domain Drive Design - Tarefa 2 - Problema Taxi Dog
+Vence 10 de setembro de 2022 às 23:59
+
+Instruções
+
+OBS: ANTES DE COMEÇAR -
+-Lembre de onde você salvou o projeto
+-Escreva os gettes e setters através do atalho
+-Coloque um System.out.print("alguma coisa") em cada método mostrar,
+     o objeto de todo esse excercício é ver esse método funcionando.
+
+Siga os passos abaixo e olhe o desenho em anexo em caso de dúvida.
+O Checkpoint será 40% desse exercício, não se preocupe :-)
+
+1-Crie o projeto app_taxidog
+(Lembre-se de onde está criando ele em seu computador)
+
+2-Crie os pacotes:
+com.unicornio.app_taxidog.entidades
+com.unicornio.app_taxidog.pagamento
+com.unicornio.app_taxidog.util
+
+3-Crie as classes dentro do pacote com.unicornio.app_taxidog.entidades:
+Pessoa
+Endereco
+Motorista
+Pagador
+Animal
+
+4-Crie os atributos da classe Pessoa:
+nome (tipo String)
+cpf (tipo Long)
+endereco (tipo Endereco)
+
+5-Crie os atributos da classe Motorista:
+cnh (tipo Long)
+
+6-Na classe Motorista crie o método:
+public void dirigirNoApp()
+
+7-Crie os atributos da classe Pagador:
+animal (tipo Animal)
+
+8-Na classe Pagador crie o método:
+public void pedirNoApp()
+
+9-Na classe Endereco crie os atributos:
+rua (tipo String)
+numero (tipo Integer)
+bairro (tipo String)
+cep (tipo Long)
+cidade (tipo String)
+estado (tipo String)
+pais (tipo String)
+
+10-Na classe Endereco crie o método:
+public void mostraEndereco()
+
+11-Crie o atributo da classe Animal:
+nome (tipo String)
+
+12-No Pacote com.unicornio.app_taxidog.pagamento crie a classe Pagamento com os atributos:
+pagador (tipo Pagador)
+valor (tipo Double)
+motorista (tipo Motorista)
+
+13-Na classe Pagamento crie o método:
+public void pagar()
+
+14-No Pacote com.unicornio.app_taxidog.util crie a interface "Mostravel"
+
+15-Na interface Mostravel crie o metodo:
+public void mostrar()
+
+16-Nas classes Pagador e Motorista escreva do lado do nome da classe "extends Pessoa" para que elas se tornem filhas de pessoa
+
+17-Nas classes Pagamento, Pessoa e Animal escreva do lado do nome da classe "implements Mostravel", perceba que ao fazer isso obritoriamente temos que escrever um método mostrar em cada uma das classes (o Eclipse vai mostrar um erro na classe e a opção de escrever o método automaticamente, use essa opção)
+
+18-Crie a classe Principal com um método main, nela crie um novo Pagamento, Motorista e Pagador, chame o método mostrar das classes.
